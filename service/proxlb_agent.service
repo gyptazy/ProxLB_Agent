@@ -1,0 +1,11 @@
+[Unit]
+Description=ProxLB Agent - Extending the features like DPM and auto-node-patching.
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=python3 /usr/lib/python3/dist-packages/proxlb_agent/main.py -c /etc/proxlb/proxlb_agent.yaml
+User=plba
+
+[Install]
+WantedBy=multi-user.target

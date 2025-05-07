@@ -1,0 +1,7 @@
+__app_name__ = "ProxLB Agent"
+__app_desc__ = "The agent for ProxLB providing additional features like DPM and patching."
+__author__ = "Florian Paul Azim Hoberg <gyptazy>"
+__copyright__ = "Copyright (C) 2025 Florian Paul Azim Hoberg (@gyptazy)"
+__license__ = "GPL-3.0"
+__version__ = "0.0.1b"
+__url__ = "https://github.com/gyptazy/ProxLB_Agent"

@@ -1,0 +1,16 @@
+#!/bin/bash
+set -e
+
+#DEBHELPER#
+if [ "$1" = "remove" ]; then
+    systemctl stop proxlb_agent.service || true
+    systemctl disable proxlb_agent.service || true
+
+    # Remove the 'plb' user if it exists
+    if id "plba" &>/dev/null; then
+        userdel --remove plba
+        echo "User 'plba' removed."
+    else
+        echo "User 'plba' does not exist, skipping removal."
+    fi
+fi

@@ -1,0 +1,12 @@
+Source: proxlb-agent
+Maintainer: Florian Paul Azim Hoberg <gyptazy@gyptazy.com>
+Section: admin
+Priority: optional
+Standards-Version: 4.5.0
+Build-Depends: debhelper-compat (= 13), dh-python, python3-all, python3-setuptools
+
+Package: proxlb-agent
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}, python3-requests, python3-urllib3, python3-yaml 
+Description: ProxLB Agent - Extending the features like DPM and auto-node-patching
+ An agent for ProxLB setups to bring in addtional features that require further client toolings on Proxmox nodes.

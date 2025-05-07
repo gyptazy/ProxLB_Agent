@@ -1,0 +1,19 @@
+proxlb_api:
+  hosts: ['virt01.example.com', 'virt02.example.com']
+  port: 8008
+  token: HmXkNFVWJxdvuVd4oqzV
+  timeout: 10
+
+dpm:
+  enable: true
+  wol_mac: 00:11:22:33:44:55
+
+patching:
+  enable: true
+
+service:
+  daemon: True
+  schedule:
+    interval: 12
+    format: hours
+  log_level: INFO
